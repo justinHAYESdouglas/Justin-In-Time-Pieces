@@ -1,0 +1,92 @@
+#slide-wrapper{
+  background-color: #000;
+}
+
+img{
+  display: none;
+}
+
+#slide-container-left, #slide-container-right{
+  display: inline-flex;
+  width: 40%;
+  height: 75vh;
+  margin: 10px auto auto auto;
+  object-fit: fill; 
+  background-color: black;
+}
+
+.active-slide{
+  display: flex;
+  width: 100%;
+}
+
+#caption-container{
+  display: inline-block;
+  width: 19%;
+  position: relative;
+  bottom: 200px;
+  left: 11px;
+  color: white;
+  text-align: center;
+  font-size: .8em;
+}
+
+/** Mobile Portrait **/
+@media screen and (min-width: 320px) and (max-width: 568px){
+
+  #slide-container-left, 
+  #slide-container-right{
+    margin: 5px auto auto auto;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .active-slide{
+    display: block;
+    width: 100%;
+    height: 50vh;
+  }
+
+  #caption-container{
+    display: block;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
+/** Mobile Landscape **/
+@media screen and (min-width: 568px) and (max-width: 1024px){
+  #x{
+    background-color: #0e0e0e;
+  }
+
+  #slide-container-left, 
+  #slide-container-right{
+    display: block;
+    margin-top: 5px;
+    width: 50%; 
+    height: auto;
+  }
+
+  #slide-container-right{
+    margin-top: 0px
+  }
+
+  .active-slide{
+    display: block;
+    width: 100%;
+    height: 50vh;
+  }
+
+  #caption-container{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    bottom: 0px;
+    left: 0px;
+  }
+}

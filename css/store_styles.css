@@ -1,0 +1,188 @@
+
+#highlight-container{
+  display: none;
+  width: 100%;
+  margin: 5px auto auto auto;
+  background-color: black;
+}
+
+.highlight{
+  width: 30%;
+  height:auto;
+  margin: auto;
+}
+
+#highlight-text{
+  display: inline-block;
+  width: 25%;
+  margin: auto;
+  padding: 15px;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  color: white;
+  text-align: center;
+}
+
+#highlight-text p{
+  margin-top: 25px;
+  font-size: 1.1em;
+}
+
+
+#dollar-sign{
+  display: flex;
+  flex-direction: collum;
+  position: relative;
+  top: 26px;
+  left: 34%;
+  width: 5%;
+  font-size: 1.3em;
+}
+
+#highlight-buttons{
+ display:inline-flex;
+ width: 100%;
+ margin: auto;
+ margin-top: 100px;
+}
+
+button{
+  display: block;
+  margin: auto;
+  border: none;
+  color: white;
+}
+
+#plus, #minus{
+  background: none;
+  outline: none;
+  font-size: 3.5em;
+}
+#plus:active, #minus:active{
+ color: rgb(95, 219, 95);
+}
+
+#plus:hover, #minus:hover{
+  outline: 2px solid rgb(95, 219, 95);
+ }
+#quantity{
+  font-size: 3.5em;
+}
+
+#total{
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgb(95, 219, 161);
+  font-size: 1.3em;
+  text-align: center;
+}
+
+#add-to-cart{
+  width: 40%;
+  margin: 5px auto auto auto;
+  padding: 5px;
+  background-color: rgb(17, 160, 93);
+  border-radius: 5px;
+}
+
+#add-to-cart a{
+  color: white;
+}
+
+
+#item-container{
+  display: grid;
+  width: 90%;
+	margin: auto;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+#item-container img{
+  width: 100%;
+}
+
+li img{
+  width: 100%;
+  cursor: pointer;
+}
+
+#item-container li{
+  margin: 10px;
+  background-color: whitesmoke;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+li span{
+  font-size: 1.3em;
+}
+
+/** $ Span Test (not important) **/
+@media screen and (min-width: 1024px) and (max-width: 1205px){
+  #dollar-sign{
+    left: 28%;
+  }
+}
+/**Mobile Portrait**/
+@media screen and (min-width: 320px) and (max-width: 568px){
+  #filter{
+    width: 80%;
+    font-size: 1.3em;
+  }
+
+  #highlight-container{
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .highlight{
+    width: 100%;
+  }
+
+  #highlight-text{
+    width: 90%;
+    border: none;
+    text-align: center;
+  }
+
+  #highlight-buttons{
+    margin-top: 50px;
+  }
+
+  #item-container{
+    grid-template-columns: auto auto;
+  }
+  
+  #total{
+    margin: auto;
+  }
+}
+
+/** Mobile Landscape **/
+
+@media screen and (min-width: 568px) and (max-width: 1023px){
+
+  #highlight-container{
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .highlight{
+    width: 100%;
+  }
+
+  #highlight-text{
+    width: 90%;
+    margin: auto;
+    border: none;
+    text-align: center;
+  }
+
+  #highlight-buttons{
+    margin-top: 50px;
+  }
+
+  #item-container{
+    grid-template-columns: auto auto auto 
+  }
+}

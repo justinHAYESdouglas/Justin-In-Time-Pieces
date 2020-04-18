@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav_styles.css">
+  <link rel="stylesheet" href="css/checkout_styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/nav_script.js"></script>
+  <script src="scripts/checkout_scripts.js"></script>
+  <title>Checkout | Justin Time Pieces</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="icons/JTP_logo.png" alt="JTP Logo"></a>
+    <button ><img src="icons/hamburger_exit.png" alt ="hamburger exit"></button>
+    <button id="burger"><img src="icons/hamburger_menu.png" alt ="hamburger menu"></button>
+
+    <h1>J T P.</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="watches.html">Watches</a></li>
+      <li><a href="clocks.html">Clocks</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="checkout-wrapper">
+      <div id="checkout-container">
+        <div id="item-info">
+        <h1>Item Name</h1>
+        <h2>$320.79</h2>
+        <h3>8</h3>
+
+        <button id="change-order">Change Order</button>
+      </div>
+    </div>
+
+      <form>
+        <div class="y">
+          <label for="name">Name on Card</label>
+          <input type="text" id="name">
+        </div>
+       <div class="x">
+          <label for="card">Card Number</label>
+          <input type="text" id="card">
+        </div>
+
+        <div class="x">
+          <label for="expire">Exp</label>
+          <input type="text" id="expire" placeholder="mm/yyyy">
+        </div>
+
+        <div class="x">
+          <label for="ccv">CCV</label>
+          <input type="text" id="ccv" placeholder="123">
+        </div>
+
+        <div class="y">
+         <label for="email">E-mail</label>
+         <input type="text" id="email">
+        </div>
+
+        <div class="x">
+          <label for="addr">Address</label>
+          <input type="text" id="addr">
+        </div>
+
+        <div class="x">
+         <label for="st">State</label>
+         <input type="text" id="st" placeholder="IL">
+        </div>
+        
+        <div class="x">
+         <label for="zip">Zip Code</label>
+          <input type="text" id="zip">
+        </div>
+        <p><i>*You can't actually buy this stuff. Also, this site doesn't store personal information.</i></p>
+        <input type="submit" value="Confirm Purchase">
+      </form>
+    </div>
+  </main>
+
+  <div id="empty-cart">
+    <h3>Your cart is empty.</h3>
+    <h4>Add items to it below.</h4>
+    <button><a href="watches.html">Browse Watches</a></button>
+    <button><a href="clocks.html">Browse Clocks</a></button>
+  </div>
+
+  <footer>
+    <p>This site is a portfolio piece made by me.</p>
+    <p>- Justin C. Hayes Doulglas</p>  
+   </footer>
+</body>
+</html>  
